@@ -1,0 +1,674 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */ /* NAVBAR *//* NAVBAR */
+
+#main #header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+#main #header_content {
+    max-width: 1400px;
+    margin: auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#img-logo {
+    color: white;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+}
+
+#dot {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#main #header #header_content a {
+    text-decoration: none;
+}
+
+#main #header_content #nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main #header_content #nav ul li {
+    list-style: none;
+    display: inline;
+}
+
+#main #header_content #nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin: 0 15px;
+    transition: 0.5s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#main #header_content #nav ul li a:hover {
+    color: darkcyan;
+}
+
+.nav {
+    display: none;
+}
+
+#nav-icon {
+    color: white;
+    font-size: 25px;
+    display: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* HOME SECTION */ /* HOME SECTION */ /* HOME SECTION */
+
+canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#home {
+    background-color: #072f4e;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.content img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#home h1 {
+    font-size: 42px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 20px auto;
+}
+
+.content hr {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#home p {
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+    color: darkcyan;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* ABOUT SECTION */ /* ABOUT SECTION */ /* ABOUT SECTION */
+
+#about {
+    max-width: 950px;
+    height: 100%;
+    padding: 150px 0;
+    margin: auto;
+    display: flex;
+    color: black;
+}
+
+#about .personal-info h1 {
+    font-size: 50px;
+    margin-bottom: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#about .foto {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 50px;
+}
+
+#about .foto img {
+    border-radius: 50%;
+    border: solid 4px darkcyan;
+    width: 400px;
+    height: 400px;
+    margin-top: -15px;
+}
+
+#about .personal-info {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 50px;
+}
+
+#about .personal-info p {
+    color: black;
+    font-size: 18px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+}
+
+#about #personal-links {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#about .foto a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#about .foto a:hover {
+    color: darkcyan;
+}
+
+#about #personal-links-2 {
+    display: none;
+}
+
+#p_info {
+    color: black;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* SERVICES SECTION */ /* SERVICES SECTION */ /* SERVICES SECTION */
+
+#services {
+    height: 100%;
+    width: 100%;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    color: white;
+    background-color: #072f4e;
+}
+
+#services h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#services .row {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto auto;
+}
+
+#services .row .service {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: 250px;
+}
+
+#services .service img {
+    display: flex;
+    margin: 20px auto;
+    width: 100px;
+    height: 100px;
+}
+
+#services .service h3 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+#services .service hr {
+    margin: 20px auto;
+}
+
+#services .service h4 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+#services .service p {
+    font-size: 16.5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 26px;
+}
+
+/* PORTFOLIO SECTION */ /* PORTFOLIO SECTION */ /* PORTFOLIO SECTION */
+
+#portfolio {
+    height: 100%;
+    width: 100%;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+#portfolio h1 {
+    font-size: 50px;
+    margin-bottom: 65px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#portfolio .row {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
+
+#portfolio .row .project {
+    max-width: 450px;
+    border: solid 2px black;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#portfolio .row .project img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    object-fit: fill;
+    transition: 0.5s;
+}
+
+#portfolio .row .project:hover img {
+    filter: grayscale(0);
+}
+
+#portfolio .row .project .info {
+    position: absolute;
+    left: 0;
+    background-color: darkcyan;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: 0.5s;
+    line-height: 25px;
+}
+
+#portfolio .row .project:hover .info {
+    opacity: 0.8;
+    bottom: 0;
+}
+
+#portfolio .row .project .info h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#portfolio .row .project .info p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CONTACT-FORM SECTION */ /* CONTACT-FORM SECTION */ /* CONTACT-FORM SECTION */
+
+#contact {
+    background-color: #072f4e;
+    height: 100%;
+    width: 100%;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contact h1 {
+    font-size: 50px;
+    margin-bottom: 65px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#contact .name {
+    margin-bottom: 35px;
+}
+
+#contact h3 {
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#contact p {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contact a {
+    color: white;
+    font-size: 50px;
+    margin: 0 15px;
+    transition: 0.5s;
+}
+
+#contact a:hover {
+    color: darkcyan;
+}
+
+/* FOOTER SECTION */ /* FOOTER SECTION */ /* FOOTER SECTION */
+
+#footer {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 40px 0;
+}
+
+#footer p {
+    color: white;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 25px;
+}
+
+#flaticon {
+    display: none;
+}
+
+/* RESPONSIVE DESIGN */ /* RESPONSIVE DESIGN */ /* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 900px) {
+    #header_content #nav ul li a {
+        display: none;
+    }
+
+    #img-logo {
+        display: none;
+    }
+
+    #main #header {
+        display: none;
+    }
+
+    /* MENU RESPONSIVE MENU RESPONSIVE MENU RESPONSIVE */
+
+    .nav {
+        background-color: black;
+        opacity: 0.8;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        padding: 12px 20px;
+    }
+
+    .nav-target {
+        color: white;
+        font-size: 30px;
+        transition: 0.5s;
+    }
+
+    .nav-target:hover {
+        color: darkcyan;
+    }
+
+    .nav-target-x {
+        color: white;
+        font-size: 30px;
+        transition: 0.5s;
+    }
+
+    .nav-target-x:hover {
+        color: darkcyan;
+    }
+
+    .nav-logo {
+        color: white;
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 50px;
+    }
+
+    #dot {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .nav a {
+        text-decoration: none;
+    }
+
+    .nav-links {
+        font-size: 22px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        display: grid;
+        place-items: center;
+        background-color: black;
+        clip-path: circle(0% at top right);
+        transition: clip-path 0.5s;
+        height: fit-content;
+    }
+
+    .nav-links:target {
+        clip-path: circle(150% at top right);
+    }
+
+    .nav-links a {
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 14px;
+        letter-spacing: 5px;
+        text-decoration: none;
+        transition: none;
+        clip-path: none;
+    }
+
+    .nav-links a:hover {
+        color: white;
+        background-color: darkcyan;
+        border-radius: 100px;
+        width: 85%;
+        text-align: center;
+        transition: 0.5s;
+    }
+
+    /* RESPONSIVE HOME SECTION */
+
+    #home h1 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    /* RESPONSIVE ABOUT SECTION */
+
+    #about {
+        height: 100%;
+        padding-top: 35px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 100px;
+        display: block;
+    }
+
+    #about .personal-info h1 {
+        text-align: center;
+        margin: 35px auto;
+        font-size: 35px;
+    }
+    
+    #about .foto {
+        max-width: 250px;
+        margin: auto;
+    }
+    
+    #about .foto img {
+        margin-top: 70px;
+        width: 100%;
+        height: 100%;
+    }
+
+    #about .personal-info {
+        margin: auto 50px;
+    }
+
+    #about #personal-links {
+        display: none;
+    }
+    
+    #about #personal-links-2 {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #about #personal-links-2 a {
+        color: black;
+        font-size: 30px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    #about #personal-links-2 a:hover {
+        color: darkcyan;
+    }
+
+    /* RESPONSIVE SERVICES SECTION */
+
+    #services {
+        height: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #services h1 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 35px;
+    }
+
+    #services .row {
+        display: block;
+        margin: 50px auto;
+        max-width: 350px;
+    }
+
+    #services .row .service {
+        max-width: initial;
+    }
+
+    /* RESPONSIVE PORTFOLIO SECTION */
+
+    #portfolio {
+        height: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #portfolio h1 {
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 50px;
+        margin-bottom: -25px;
+        font-size: 35px;
+    }
+
+    #portfolio .row {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #portfolio .row .project {
+        margin-left: 35px;
+        margin-right: 35px;
+        margin-bottom: 50px;
+    }
+
+    #portfolio .row #datacleaning {
+        margin-bottom: -16px;
+    }
+
+    #portfolio .row .project img {
+        filter: grayscale(0);
+    }
+
+    #portfolio .row .project .info {
+        opacity: 0.8;
+        bottom: 0;
+        padding: 6px 10px;
+    }
+
+    /* RESPONSIVE CONTACT SECTION */
+
+    .contact {
+        display: block;
+        margin: auto;
+    }
+
+    #contact h1 {
+        font-size: 35px;
+        margin-bottom: 35px;
+    }
+
+    #half1 {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #half2 {
+        margin-top: 35px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* RESPONSIVE FOOTER SECTION */
+
+    #footer {
+        padding: 40px 25px;
+    }
+}

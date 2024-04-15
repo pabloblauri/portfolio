@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="project_4.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Sleep Health and Lifestyle | Pablo Blanco</title>
+    <link rel="icon" type="image/png" href="logotipo.png">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<section id="main">
+  <header id="header">
+    <div id="header_content">
+      <a href="https://www.pabloblancodata.com"><p id="img-logo">PB<span id="dot">.</span></p></a>
+        <nav id="nav">
+          <ul id="links">
+            <li><a href="https://www.pabloblancodata.com/#home">HOME</a></li>
+            <li><a href="https://www.pabloblancodata.com/#about">ABOUT</a></li>
+            <li><a href="https://www.pabloblancodata.com/#services">SERVICES</a></li>
+            <li><a href="https://www.pabloblancodata.com/#portfolio">PORTFOLIO</a></li>
+            <li><a href="https://www.pabloblancodata.com/#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+    </div>
+  </header>
+
+    <nav class="nav">
+      <a href="https://www.pabloblancodata.com"><p class="nav-logo">PB<span id="dot">.</span></p></a>
+
+        <div class="nav-links" id="menu">
+          <a href="#menu" class="nav-target-x">
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </a>
+
+          <a href="https://www.pabloblancodata.com/#home" class="nav-link">HOME</a>
+          <a href="https://www.pabloblancodata.com/#about" class="nav-link">ABOUT</a>
+          <a href="https://www.pabloblancodata.com/#services" class="nav-link">SERVICES</a>
+          <a href="https://www.pabloblancodata.com/#portfolio" class="nav-link">PORTFOLIO</a>
+          <a href="https://www.pabloblancodata.com/#contact" class="nav-link">CONTACT</a>
+        </div>
+
+      <a href="#menu" class="nav-target">
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+      </a>
+    </nav>
+
+    <script>
+      function closeMenu() {
+        document.querySelector('#menu').style.display = 'none';
+      }
+
+      function openMenu() {
+      document.querySelector('#menu').style.display = 'grid';
+      }
+    </script>
+
+  </div>
+</section>
+
+<!-- PROJECT -->
+<div id="projectdatabase">
+  <h1>Sleep Health Dataset Analysis</h1>
+    <div class="text1">
+      <p>The dataset covers a wide range of variables related to sleep and daily habits. It includes details such as gender, age, occupation, quality of sleep, stress levels, Body Mass Index categories, blood pressure, heart rate and the presence or absence of sleep disorders.</p><br>
+      
+      <p><span id="title">This project contains:</span></p>
+      <ul id="steps">
+        <li id="steps_li">Data exploration</li>
+        <li id="steps_li">Data cleaning and transformation</li>
+        <li id="steps_li">Data modeling</li>
+        <li id="steps_li">DAX formula language</li>
+        <li id="steps_li">Data visualization</li>
+        <li id="steps_li">Analysis of results</li>
+      </ul><br><br>
+      <p>The objective is to better understand the sleep habits of the population and provide useful information to improve the health and overall well-being of individuals.</p><br>
+      <p>By analyzing variables such as age, sleep quality, stress levels and sleep disorders; the aim is to identify significant correlations and gain insights that can be used to develop strategies and recommendations for improving and promoting healthier habits.</p><br><br>
+
+      <p><span id="title">Key features of the dataset:</span></p>
+      <ul>
+        <li id="sub_li"><span id="p">Comprehensive sleep metrics:</span> explore sleep duration, quality and factors influencing sleep patterns.</li>
+        <li id="sub_li"><span id="p">Lifestyle factors:</span> analyze physical activity levels, stress levels and BMI categories.</li>
+        <li id="sub_li"><span id="p">Cardiovascular health:</span> examine blood pressure and heart rate measurements.</li>
+        <li id="sub_li"><span id="p">Sleep disorder analysis:</span> identify the occurrence of sleep disorders such as Insomnia and Sleep Apnea.</li>
+      </ul><br><br>
+
+      <p><span id="title">Details about columns:</span></p>
+      <ul>
+        <li id="sub_li"><span id="p">Person ID:</span> an identifier for each individual.</li>
+        <li id="sub_li"><span id="p">Gender:</span> gender of the person (Male/Female).</li>
+        <li id="sub_li"><span id="p">Age:</span> age of the person in years.</li>
+        <li id="sub_li"><span id="p">Occupation:</span> occupation or profession of the person.</li>
+        <li id="sub_li"><span id="p">Sleep Duration:</span> number of hours the person sleeps per day.</li>
+        <li id="sub_li"><span id="p">Quality of Sleep:</span> a subjective rating of the quality of sleep, ranging from 1 to 10.</li>
+        <li id="sub_li"><span id="p">Physical Activity Level:</span> number of minutes the person engages in physical activity daily.</li>
+        <li id="sub_li"><span id="p">Stress Level:</span> a subjective rating of the stress level experienced by the person, ranging from 1 to 10.</li>
+        <li id="sub_li"><span id="p">BMI Category:</span> For adults, BMI is interpreted using standard weight status categories. These categories are the same for men and women of all body types and ages:
+          <ul>
+            <li id="sub_li2"><span id="p2">Underweight:</span> 124 lbs or less (BMI below 18.5)</li>
+            <li id="sub_li2"><span id="p2">Healthy Weight:</span> 125 lbs to 168 lbs (BMI 18.5 to 24.9)</li>
+            <li id="sub_li2"><span id="p2">Overweight:</span> 169 lbs to 202 lbs (BMI 25.0 to 29.9)</li>
+            <li id="sub_li2"><span id="p2">Obesity:</span> 203 lbs or more (BMI 30 or higher)</li>
+          </ul>
+        </li><br>
+        <li id="sub_li"><span id="p">Blood Pressure:</span> blood pressure measurement of the person, indicated as systolic pressure over diastolic pressure.</li>
+        <li id="sub_li"><span id="p">Heart Rate:</span> the resting heart rate of the person in beats per minute (bpm).</li>
+        <li id="sub_li"><span id="p">Daily Steps:</span> number of steps the person takes per day.</li>
+        <li id="sub_li"><span id="p">Sleep Disorder:</span> presence or absence of a sleep disorder in the person:
+          <ul>
+            <li id="sub_li2"><span id="p2">None:</span> the individual does not exhibit any specific sleep disorder</li>
+            <li id="sub_li2"><span id="p2">Insomnia:</span> the individual experiences difficulty falling asleep or staying asleep, leading to inadequate or poor-quality sleep</li>
+            <li id="sub_li2"><span id="p2">Sleep Apnea:</span> the individual suffers from pauses in breathing during sleep, resulting in disrupted sleep patterns and potential health risks</li>
+          </ul>
+        </li>
+      </ul>
+      <hr>
+      <div class="dashboard">
+        <img src="dashboard1.png" alt="Dashboard" id="img">
+      </div>
+      <div class="dashboard">
+        <img src="dashboard2.png" alt="Dashboard" id="img">
+      </div>
+      <p>The features of Age, Quality of Sleep, Stress Levels and Sleep Disorders were included to analyze the variations according to the gender of individuals, through pie charts and line graphs.</p><br><br>
+      <p><span id="title">Results:</span></p>
+      <ol id="steps">
+        <li>Sleep quality increases and stress levels decrease starting at the age of 50.</li>
+        <li>Women tend to suffer from sleep apnea more than men.</li>
+        <li>Most men usually do not present sleep disorders despite having lower sleep quality compared to women.</li>
+        <li>Men have a higher average in terms of stress levels.</li>
+      </ol><br><br>
+      <p><span id="title">Interpretation of Results:</span></p>
+      <ol id="steps">
+        <li>There seems to be a trend related to Quality of Sleep and Stress Levels as people age. From the age of 50 onwards, there is an increase in Quality of Sleep and a decrease in Stress levels. This may be associated with lifestyle changes, stress management or other factors linked to aging.</li>
+        <li>There is a significant difference between men and women regarding the prevalence of Sleep Apnea. On average, women tend to suffer from this disorder more than men. This difference could be related to biological differences, such as the anatomy of the respiratory system.</li>
+        <li>Although men have lower sleep quality compared to women, it seems that the majority of them do not usually experience sleep disorders. This suggests that men may be less likely to develop specific sleep disorders compared to women.</li>
+        <li>Men exhibit a higher average in stress levels compared to women. This difference in stress levels between genders could be influenced by a variety of factors, such as biological, social or lifestyle differences.</li>
+      </ol><br><br>
+      <p><span id="title">Recommendations:</span></p>
+      <ul id="steps">
+        <li id="recommendations_li">Conduct an evaluation of Sleep Apnea in the female population. Healthcare professionals can provide specific assessments to detect sleep apnea in women, which may help improve the early diagnosis and treatment of this disorder.</li>
+        <li id="recommendations_li">It is important to employ effective stress management techniques in people of all ages. This may include information on healthy sleep habits, relaxation techniques and strategies for managing daily stress.</li>
+      </ul>
+    </div>
+
+    <div class="text2">
+      <p><span id="p">References:</span></p>
+      <ul id="reference_links">
+        <li id="sub_li3"><a href="https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/index.html" target="_blank">About-Adult-BMI</a></p></li>
+        <li id="sub_li3"><a href="https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset" target="_blank">Sleep-Health-and-Lifestyle-Dataset</a></li>
+      </ul>
+      <p>You can visit the <a href="https://github.com/pabloblauri/dataset_analysis_and_viz" target="_blank">GitHub repository</a> for more information on the documents used in the project.</p>
+    </div>
+</div>
+
+<!-- FOOTER SECTION -->
+  <footer id="footer">
+    <p>© 2024. Pablo Blanco.</p>
+  </footer>
+
+</body>
+</html>

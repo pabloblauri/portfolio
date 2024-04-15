@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="project_1.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>JSON to CSV Converter | Pablo Blanco</title>
+    <link rel="icon" type="image/png" href="logotipo.png">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<section id="main">
+  <header id="header">
+    <div id="header_content">
+      <a href="https://www.pabloblancodata.com"><p id="img-logo">PB<span id="dot">.</span></p></a>
+        <nav id="nav">
+          <ul id="links">
+            <li><a href="https://www.pabloblancodata.com/#home">HOME</a></li>
+            <li><a href="https://www.pabloblancodata.com/#about">ABOUT</a></li>
+            <li><a href="https://www.pabloblancodata.com/#services">SERVICES</a></li>
+            <li><a href="https://www.pabloblancodata.com/#portfolio">PORTFOLIO</a></li>
+            <li><a href="https://www.pabloblancodata.com/#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+    </div>
+  </header>
+
+    <nav class="nav">
+      <a href="https://www.pabloblancodata.com"><p class="nav-logo">PB<span id="dot">.</span></p></a>
+
+        <div class="nav-links" id="menu">
+          <a href="#menu" class="nav-target-x">
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </a>
+
+          <a href="https://www.pabloblancodata.com/#home" class="nav-link">HOME</a>
+          <a href="https://www.pabloblancodata.com/#about" class="nav-link">ABOUT</a>
+          <a href="https://www.pabloblancodata.com/#services" class="nav-link">SERVICES</a>
+          <a href="https://www.pabloblancodata.com/#portfolio" class="nav-link">PORTFOLIO</a>
+          <a href="https://www.pabloblancodata.com/#contact" class="nav-link">CONTACT</a>
+        </div>
+
+      <a href="#menu" class="nav-target">
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+      </a>
+    </nav>
+
+    <script>
+      function closeMenu() {
+        document.querySelector('#menu').style.display = 'none';
+      }
+
+      function openMenu() {
+      document.querySelector('#menu').style.display = 'grid';
+      }
+    </script>
+</section>
+
+<!-- PROJECT -->
+<div id="app">
+  <h1>Use this tool to convert JSON arrays to CSV</h1>
+  <div class="form">
+    <div class="left">
+      <textarea name="" id="jsonform" cols="30" rows="10" placeholder="Enter or paste here"></textarea>
+    </div>
+    <div class="right">
+      <textarea name="" id="csvform" cols="30" rows="10"></textarea>
+    </div>
+  </div>
+  <div class="button">
+    <button id="bConvert">CONVERT</button>
+  </div>
+
+  <div class="text">
+    <p>CSV stands for Comma-Separated Values. It is a plain-text format used for representing tabular data. In a CSV file, each line represents a row of data and each value within a row is separated by a delimiter, typically a comma. However, other delimiters like semicolons or tabs can also be used.</p><br>
+    <p>JSON stands for JavaScript Object Notation. It is a data interchange format used to transmit and store structured data between a server and a web application.</p><br>
+    <p>The JSON syntax rules are quite simple, there are two types of elements that make up its structure:</p><br><br>
+    <p><span id="p">Arrays:</span> ordered lists of values ​​separated by commas. These are written between square brackets <span id="function">[ ]</span>.</p><br>
+    <p><span>Example:</span></p>
+    <img src="example1.png" alt="Example1">
+    <p><span id="p">Objects:</span> lists of name/value pairs. The name and value are separated by a colon and the pairs are separated by commas. Objects are enclosed in braces <span id="function">{ }</span> and pair names are always enclosed in double quotes <span id="function">" "</span>.</p><br>
+    <p><span>Example:</span></p>
+    <img src="example2.png" alt="Example2">
+    <p><span>Example of an array of objects:</span></p>
+    <img src="example3.png" alt="Example3">
+    <p><span id="p">Reminder:</span></p><br>
+    <p><i class="fa-solid fa-check"></i> Values ​​(in both objects and arrays) can be whole numbers, decimals or in exponential notation.</p><br>
+    <p><i class="fa-solid fa-check"></i> Text strings are enclosed in quotes.</p><br>
+    <p><i class="fa-solid fa-check"></i> Numeric and Boolean values ​​are written without quotes.</p>
+  </div>
+
+  <div class="text2">
+    <p>You can visit the <a href="https://github.com/pabloblauri/JSON_to_CSV_converter" target="_blank">GitHub repository</a> for more information and source code of the project.</p>
+  </div>
+</div>
+
+<!-- FOOTER SECTION -->
+  <footer id="footer">
+    <p>© 2024. Pablo Blanco.</p>
+  </footer>
+
+  <script src="project_1.js"></script>
+
+</body>
+</html>

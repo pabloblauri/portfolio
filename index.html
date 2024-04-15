@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Pablo Blanco | Homepage</title>
+    <link rel="icon" type="image/png" href="logotipo.png">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<section id="main">
+	<header id="header">
+    <div id="header_content">
+
+      <a href="https://www.pabloblancodata.com"><p id="img-logo">PB<span id="dot">.</span></p></a>
+
+        <nav id="nav">
+          <ul id="links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <a href="https://www.pabloblancodata.com"><p class="nav-logo">PB<span id="dot">.</span></p></a>
+
+      <div class="nav-links" id="menu">
+        <a href="#menu" class="nav-target-x">
+          <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+        </a>
+
+        <a href="#home" class="nav-link">HOME</a>
+        <a href="#about" class="nav-link">ABOUT</a>
+        <a href="#services" class="nav-link">SERVICES</a>
+        <a href="#portfolio" class="nav-link">PORTFOLIO</a>
+        <a href="#contact" class="nav-link">CONTACT</a>
+      </div>
+
+    <a href="#menu" class="nav-target">
+      <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+    </a>
+  </nav>
+
+  <script>
+    function closeMenu() {
+      document.querySelector('#menu').style.display = 'none';
+    }
+
+    function openMenu() {
+    document.querySelector('#menu').style.display = 'grid';
+    }
+  </script>
+</section>
+
+<!-- HOME SECTION -->
+<div id="particles-js"></div>
+  <section id="home">
+      <div class="content">
+        <img src="logotipo.png">
+        <h1>Welcome to <span>Pablo Blanco</span>'s homepage</h1>
+        <hr>
+        <br>
+        <p>Data Analyst</p>
+      </div>
+  </section>
+
+<!-- ABOUT SECTION -->
+  <section id="about">
+    <div class="foto">
+      <img src="profile_homepage.png" alt="Photo">
+
+      <div id="personal-links">
+        <a href="https://github.com/pabloblauri" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a download="pablo_blanco_resume" href="pablo_blanco_resume.pdf" target="_blank"><i class="fa-solid fa-user"></i> Resume</a>
+        <a href="https://www.linkedin.com/in/pabloblancodata/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="personal-info">
+      <h1>A bit about <span>me</span>.</h1>
+      <p>I have been involved in data and web development since 2022. I work remotely as a <span id="p_info">freelance data analyst</span>.</p><br>
+      <p>My journey in the world of data began as a curiosity and has turned into an odyssey for a deep understanding of the information that resides within the numbers.</p><br>
+      <p>Data <span id="p_info">analysis</span> and <span id="p_info">programming</span> are some techniques that I am using to achieve my goals. My job consists in helping companies to clean, analyze and visualize their datasets.</p><br>
+      <p>If you're interested in knowing <span id="p_info">more about me</span>, you can check out my Resume or my LinkedIn profile.</p>
+    </div>
+
+    <div id="personal-links-2">
+      <a href="https://github.com/pabloblauri" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a download="pablo_blanco_resume" href="pablo_blanco_resume.pdf" target="_blank"><i class="fa-solid fa-user"></i></a>
+      <a href="https://www.linkedin.com/in/pabloblancodata/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </section>
+
+<!-- SERVICES SECTION -->
+  <section id="services">
+    <h1>My <span>services</span>.</h1>
+    <div class="row">
+      <div class="service">
+        <img src="code.png" alt="Web Development">
+        <h3>Web development</h3>
+        <hr>
+        <h4><span>Tools:</span> HTML / CSS / JavaScript</h4><br><br>
+        <p>I create applications that seamlessly integrate with databases, concurrently employing my expertise in designing responsive websites.</p>
+        <p>This dual proficiency allows me to not only build robust and functional systems but also deliver a compelling and seamless user experience on the frontend.</p>
+      </div>
+
+      <div class="service">
+        <img src="management.png" alt="Data Management">
+        <h3>Database management</h3>
+        <hr>
+        <h4><span>Tools:</span> MySQL Workbench / Excel</h4><br><br>
+        <p>I specialize in maintaining and managing information using the relational database system.</p>
+        <p>My job focuses on updating databases to ensure that the stored information is accurate and accessible to users, which requires tasks such as data collection, verification, validation and continuous maintenance of data integrity.</p>
+      </div>
+
+      <div class="service">
+        <img src="dashboard.png" alt="Data Visualization">
+        <h3>Data visualization</h3>
+        <hr>
+        <h4><span>Tools:</span> Power BI</h4><br><br>
+        <p>In my data visualization practice, I transform information into dynamic and comprehensible visual representations. My goal is to provide a pleasant and easily understandable experience for a diverse audience.</p>
+        <p>I employ interactive methods to present results in a clear, effective and summarized way.</p>
+      </div>
+    </div>
+  </section>
+
+<!-- PORTFOLIO SECTION -->
+<section id="portfolio">
+  <h1>Some of my <span>projects</span>.</h1>
+  <div class="row">
+    <div class="project">
+      <a href="Project_1/project_1.html"><div class="overlay"></div>
+        <img src="miniatura1.png">
+          <div class="info">
+            <h3>Application</h3>
+            <p>JSON to CSV converter</p>
+        </div></a>
+    </div>
+    <div class="project" id="datacleaning">
+      <a href="Project_2/project_2.html"><div class="overlay"></div>
+        <img src="miniatura2.png">
+          <div class="info">
+            <h3>Excel for Data Cleaning</h3>
+            <p>Transforming a raw database</p>
+        </div></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="project">
+      <a href="Project_3/project_3.html"><div class="overlay"></div>
+        <img src="miniatura3.png">
+          <div class="info">
+            <h3>SQL for Data Analysis</h3>
+            <p>Olympic Games database</p>
+        </div></a>
+    </div>
+    <div class="project">
+      <a href="Project_4/project_4.html"><div class="overlay"></div>
+        <img src="miniatura4.png">
+          <div class="info">
+            <h3>Sleep Health Dataset Analysis</h3>
+            <p>Health and Lifestyle dashboard</p>
+        </div></a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT-FORM SECTION -->
+<section id="contact">
+  <h1>Let's get in <span>touch</span>.</h1>
+    <div class="contact">
+      <div id="half1">
+        <div class="name">
+          <h3>Email:</h3>
+          <p>info.pablo.blanco@gmail.com</p>
+        </div>
+        <div class="location">
+          <h3>Location:</h3>
+          <p>Guatemala City, Guatemala or remote work</p>
+        </div>
+      </div>
+      <div id="half2">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info.pablo.blanco@gmail.com&su=" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/pabloblancodata/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+</section>
+
+<!-- FOOTER SECTION -->
+  <footer id="footer">
+    <p>Design and developed by Pablo Blanco.</p>
+    <p>© 2024. All rights reserved.</p>
+    <p id="flaticon"><a href="https://www.flaticon.com/free-icons/ux" title="ux icons">Ux icons created by Freepik - Flaticon</a></p>
+  </footer>
+
+  <script src="header.js"></script>
+  <script src="particles.min.js"></script>
+  <script src="particlesjs-config.json"></script>
+
+</body>
+</html>
