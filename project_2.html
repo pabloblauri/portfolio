@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="project_2.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Data Cleaning | Pablo Blanco</title>
+    <link rel="icon" type="image/png" href="logotipo.png">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<section id="main">
+  <header id="header">
+    <div id="header_content">
+      <a href="https://www.pabloblancodata.com"><p id="img-logo">PB<span id="dot">.</span></p></a>
+        <nav id="nav">
+          <ul id="links">
+            <li><a href="https://www.pabloblancodata.com/#home">HOME</a></li>
+            <li><a href="https://www.pabloblancodata.com/#about">ABOUT</a></li>
+            <li><a href="https://www.pabloblancodata.com/#services">SERVICES</a></li>
+            <li><a href="https://www.pabloblancodata.com/#portfolio">PORTFOLIO</a></li>
+            <li><a href="https://www.pabloblancodata.com/#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+    </div>
+  </header>
+
+    <nav class="nav">
+      <a href="https://www.pabloblancodata.com"><p class="nav-logo">PB<span id="dot">.</span></p></a>
+
+        <div class="nav-links" id="menu">
+          <a href="#menu" class="nav-target-x">
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </a>
+
+          <a href="https://www.pabloblancodata.com/#home" class="nav-link">HOME</a>
+          <a href="https://www.pabloblancodata.com/#about" class="nav-link">ABOUT</a>
+          <a href="https://www.pabloblancodata.com/#services" class="nav-link">SERVICES</a>
+          <a href="https://www.pabloblancodata.com/#portfolio" class="nav-link">PORTFOLIO</a>
+          <a href="https://www.pabloblancodata.com/#contact" class="nav-link">CONTACT</a>
+        </div>
+
+      <a href="#menu" class="nav-target">
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+      </a>
+    </nav>
+
+    <script>
+      function closeMenu() {
+        document.querySelector('#menu').style.display = 'none';
+      }
+
+      function openMenu() {
+      document.querySelector('#menu').style.display = 'grid';
+      }
+    </script>
+
+  </div>
+</section>
+
+<!-- PROJECT -->
+<div id="projectdatacleaning">
+  <h1>Excel for Data Cleaning</h1>
+    <div class="text1">
+      <p>Excel is a powerful tool for data cleaning, which involves dealing with "dirty data", data that requires preparation before analysis. Raw data often contains numerous errors that can impact accuracy, leading to incorrect predictions and negative business outcomes.</p><br>
+      <p>To enhance the quality of company information, consider the following strategies:</p>
+      <ol id="steps">
+        <li>Convert data to table format</li>
+        <li>Separate first and last names</li>
+        <li>Identify duplicate values</li>
+        <li>Ensure correct capitalization (orthography)</li>
+        <li>Remove extra spaces or tabulation</li>
+        <li>Correct date format</li>
+        <li>Convert decimal values to percentages (if needed)</li>
+        <li>Format values as currency (if required)</li>
+        <li>Identify cells with blank spaces or null values</li>
+      </ol>
+    </div>
+
+    <div class="text_column">
+      <div class="column1">
+        <h3>DESCRIPTION</h3>
+        <hr id="underline">
+        <p>The following example demonstrates the cleanup of a fictitious database using formulas or methods to correct and modify specific requirements.</p>
+      </div>
+      <div class="column2">
+        <h3>GOAL</h3>
+        <hr id="underline">
+        <p>Identify errors that can impact companies' strategies and the development of new products or services, ultimately leading to inaccurate sales forecasts.</p>
+      </div>
+      <div class="column3">
+        <h3>RESULT</h3>
+        <hr id="underline">
+        <p>By employing the provided formulas and following the outlined steps in the exercise, it was possible to clean the entire table. This resulted in presenting the data in a more professional and readable format.</p>
+      </div>
+    </div>
+
+    <h2>Company's Employee Database</h2>
+    <div class="text1">
+      <p>Raw database:</p>
+      <div class="excel_img">
+        <img src="raw_database.png" alt="RawDatabase" id="img2">
+      </div>
+    </div>
+    <div class="text1">
+      <table>
+        <tr>
+          <th>Formula</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td><span id="font">CLEAN()</span></td>
+          <td>Removes all non-printable characters from the text.</td>
+        </tr>
+        <tr>
+          <td><span id="font">TRIM()</span></td>
+          <td>Removes all blank spaces from the text except the individual spaces between words.</td>
+        </tr>
+        <tr>
+          <td><span id="font">LEFT()</span></td>
+          <td>Returns the specified number of characters from the beginning of a text string (used to create employee's IDs).</td>
+        </tr>
+        <tr>
+          <td><span id="font">UPPER()</span></td>
+          <td>Converts a text string to uppercase letters.</td>
+        </tr>
+        <tr>
+          <td><span id="font">PROPER()</span></td>
+          <td>Converts a text string to upper or lower case, depending on the case; the first letter of each word is capitalized and the remaining letters are lowercase.</td>
+        </tr>
+        <tr>
+          <td><span id="font">IF()</span></td>
+          <td>Returns a value if a condition is true and other if it is false (used to rename boolean values).</td>
+        </tr>
+      </table>
+      <hr>
+      <p>In Microsoft Excel 2019, the default decimal separator is a comma, not a period. Therefore, if you want to do a mathematical operation, it will return an error.</p><br>
+      <p><span id="p">Steps to remove currency format:</span></p>
+      <ol>
+        <li>Select the column</li>
+        <li>Navigate to the "Find and Replace" option <span id="function">(Ctrl + F)</span></li>
+        <li>Choose the "Replace" tab</li>
+        <li>In the "Find what" field, type the "$" symbol</li>
+        <li>Leave the "Replace with" field empty</li>
+        <li>Finally, select the "Replace All" option</li>
+      </ol>
+      <br>
+      <p><span id="p">Steps to replace decimal point with a comma:</span></p>
+      <ol>
+        <li>Select the column</li>
+        <li>Navigate to the "Find and Replace" option <span id="function">(Ctrl + F)</span></li>
+        <li>Choose the "Replace" tab</li>
+        <li>In the "Find what" field, type the "." symbol</li>
+        <li>In the "Replace with" field, type the "," symbol</li>
+        <li>Finally, select the "Replace All" option</li>
+      </ol>
+      <div class="excel_img">
+        <img src="currency_format.png" alt="CurrencyFormat" id="img1">
+      </div>
+      <hr>
+      <p>In this exercise, the start date doesn't specify any type of format and also contains tabulation.</p><br>
+      <p><span id="p">Steps to fix date format:</span></p>
+      <ol>
+        <li>Select the column</li>
+        <li>Locate the option "Data" in tools tab</li>
+        <li>Select the option "Text to columns"</li>
+        <li>In the Text Wizard, choose the file type "Delimited" and click Next</li>
+        <li>In Delimiters Screen, uncheck the "Tab" and "Space" options and click Next</li>
+        <li>In Column Data Format Screen, check the "Date" option, set the date format to <span id="function">DMY(Day/Month/Year)</span> and click Finished.</li>
+      </ol>
+      <div class="excel_img">
+        <img src="date_format.png" alt="DateFormat" id="img1">
+      </div>
+      <hr>
+      <p><span id="p">Steps to identify duplicate values and how to remove them:</span></p>
+      <ol>
+        <li>Select all table data (except headers)</li>
+        <li>Locate the "Home" option in the tools tab</li>
+        <li>Select "Conditional Formatting"</li>
+        <li>Choose "Highlight Cells Rules"</li>
+        <li>Select "Duplicate Values" (you can choose how to highlight your data)</li>
+        <li>From the table's filter options, choose "Sort by color"</li>
+        <li>To remove duplicates, locate the "Data" option on the tools tab and select "Remove Duplicates" from the menu</li>
+      </ol>
+      <div class="excel_img">
+        <img src="duplicate_values.png" alt="DuplicateValues" id="img2">
+      </div>
+      <hr>
+      <p>The last step of the exercise indicates that empty cells should be removed because they represent null values.</p><br>
+      <p><span id="p">Steps to identify empty cells and how to remove them:</span></p>
+      <ol>
+        <li>Select all table data (except headers)</li>
+        <li>Locate the "Home" option in the tools tab</li>
+        <li>Select "Conditional Formatting"</li>
+        <li>Choose "Highlight Cells Rules"</li>
+        <li>Select "More Rules"</li>
+        <li>In the "New Formatting Rule" tab > Edit the Rule Description > Format only cells with, choose the option "Blanks" (you can choose how to highlight your data)</li>
+        <li>To remove empty cells, locate the "Home" option on the tools tab, select the columns, and finally, choose the option "Delete Cells" from the menu</li>
+      </ol>
+      <div class="excel_img">
+        <img src="empty_cells.png" alt="EmptyCells" id="img2">
+      </div>
+      <hr>
+      <p>Final result of the cleaning process:</p>
+      <div class="excel_img">
+        <img src="clean_database.png" alt="CleanDatabase" id="img2">
+      </div>
+    </div>
+    <div class="text2">
+      <p>You can visit the <a href="https://github.com/pabloblauri/excel_data_cleaning" target="_blank">GitHub repository</a> for more information on the documents used in the project.</p>
+    </div>
+</div>
+
+<!-- FOOTER SECTION -->
+  <footer id="footer">
+    <p>© 2024. Pablo Blanco.</p>
+  </footer>
+
+</body>
+</html>
